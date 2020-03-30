@@ -4,9 +4,6 @@ require './questions'
 Player1 = Players.new('Player1')
 Player2 = Players.new('Player2')
 
-#p Player1 # => <Players:0x0000000001b380e8 @name="Player1", @life=3>
-#p Player2 # => <Players:0x0000000001b37f58 @name="Player2", @life=3>
-
 def start(player)
   puts "#{player.name}: What does #{Question.num1} plus #{Question.num2} equal?"
   answer = gets.chomp
